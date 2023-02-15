@@ -1,0 +1,19 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "package.json",
+  "main": "package.json",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsan96/To-do-list-mern-app.git"
+  },
+  "author": "ajs-FE-branch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsan96/To-do-list-mern-app/issues"
+  },
+  "homepage": "https://github.com/jsan96/To-do-list-mern-app#readme"
+}

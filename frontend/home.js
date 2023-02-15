@@ -1,4 +1,4 @@
-import React from 'react';
+const React = require('react');
 import { Link } from 'react-router-dom';
 
 function Navbar() {
@@ -9,10 +9,10 @@ function Navbar() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/login">Login</Link>
         </li>
         <li>
-          <Link to="/contact">Contact</Link>
+          <Link to="/signup">Sign-up</Link>
         </li>
       </ul>
     </nav>
@@ -20,7 +20,8 @@ function Navbar() {
 }
 
 function Home() {
-  return <h1>Welcome to our website!</h1>;
+  <h1>Trouble staying organized?</h1>;
+  <h2>We gotchu.</h2>
 }
 
 function App() {
