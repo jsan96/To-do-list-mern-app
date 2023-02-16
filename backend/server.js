@@ -27,9 +27,17 @@ mongoose.connect(
 );
 
 //ROUTES
-app.use(require("./routes/index"));
+const Todo = require("./models/Todo");
 
-app.use(require("./routes/todo"));
+app.get('/', (req, res) => {
+  res.send('Welcome to Life List!')
+}); 
+
+app.get('/todos', async (req, res) => {
+  const todos = await Todo.find();
+
+  res.json(todos);
+});
 
 //PORT
 const PORT = process.env.PORT
