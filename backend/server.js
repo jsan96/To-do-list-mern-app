@@ -39,6 +39,16 @@ app.get('/todos', async (req, res) => {
   res.json(todos);
 });
 
+app.post('/todo/new', (req, res) => {
+	const todo = new Todo({
+		text: req.body.text
+	})
+
+	todo.save();
+
+	res.json(todo);
+});
+
 //PORT
 const PORT = process.env.PORT
 app.listen(PORT, () => {
