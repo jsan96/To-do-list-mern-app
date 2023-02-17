@@ -18,17 +18,19 @@ export const authSlice = createSlice({
             state.user = null;
             state.token = null; 
         },
-        setTasks: (state, action) => {
-            state.tasks = action.payload.tasks;
+        setToDos: (state, action) => {
+            state.toDos = action.payload.toDos;
         },
-        setTask: (state, action) => {
-            const updatedTasks = state.tasks.map((task) => {
-                if (task._id === action.payload.task_id) return action.payload.task;
-                return task;
+        setToDo: (state, action) => {
+            const updatedToDos = state.toDo.map((toDo) => {
+                if (toDo._id === action.payload.toDo_id) return action.payload.ToDo;
+                return ToDo;
             });
-            state.tasks = updatedTasks; 
+            state.ToDos = updatedToDos; 
         }
     }
 })
 
-export const { setLogin, setLogout, setTasks, setTask } = authSlice.action
+export const { setLogin, setLogout, setToDos, setToDo } = 
+    authSlice.action
+export default authSlice.reducer;
