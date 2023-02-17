@@ -49,6 +49,13 @@ app.post('/todo/new', (req, res) => {
 	res.json(todo);
 });
 
+app.delete('/todo/delete/:id', async (req, res) => {
+	const result = await Todo.findByIdAndDelete(req.params.id);
+
+	res.json({result});
+});
+
+
 //PORT
 const PORT = process.env.PORT
 app.listen(PORT, () => {
