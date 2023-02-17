@@ -2,6 +2,8 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt")
+const app = express();
 
 //STRICT SET-UP
 mongoose.set("strictQuery", false);
@@ -9,10 +11,11 @@ mongoose.set("strictQuery", false);
 
 //MIDDLEWARE
 require("dotenv").config();
-
-const app = express();
 app.use(express.json());
-
+//app.use((req, res, next) => {
+//    console.log(req.path, req.method)
+//   next()
+//})
 app.use(cors());
 
 
@@ -26,7 +29,7 @@ mongoose.connect(
   }
 );
 
-//ROUTES
+// TODO ROUTES
 const Todo = require("./models/Todo");
 
 app.get('/', (req, res) => {
@@ -64,6 +67,23 @@ app.put('/todo/complete/:id', async (req, res)  => {
 
   res.json(todo);
 });
+
+
+//AUTH ROUTES
+const User = require('./models/User')
+
+ app.post('/register', (req, res) => {
+  const user = new User ({
+    email: req.body.email,
+    password: req.body.password,
+  });
+
+  user.save();
+  res.json(user);
+  
+ });
+
+
 
 
 //PORT
