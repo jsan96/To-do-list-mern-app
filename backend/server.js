@@ -26,6 +26,11 @@ mongoose.connect(
   }
 );
 
+//HOME ROUTE
+app.get('/', (req, res) => {
+  res.send('Welcome to Life List!')
+}); 
+
 //IMPORT TODOS
 app.use(todoRoute);
 
