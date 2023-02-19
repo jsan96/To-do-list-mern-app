@@ -1,4 +1,12 @@
-const frontPage = () => {
-    return (<div>FrontPage</div>)
+import React from 'react';
+import FrontPage from './FrontPage';
+
+function App() {
+  return (
+    <div>
+      <FrontPage />
+    </div>
+  );
 }
-export default frontPage;
+
+export default App;
