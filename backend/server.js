@@ -2,8 +2,10 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const bcrypt = require("bcrypt")
+const bcrypt = require('bcryptjs');
 const app = express();
+const todoRoute = require('./routes/todoRoutes')
+const userRoutes = require('./routes/userRoutes')
 
 //STRICT SET-UP
 mongoose.set("strictQuery", false);
@@ -12,12 +14,7 @@ mongoose.set("strictQuery", false);
 //MIDDLEWARE
 require("dotenv").config();
 app.use(express.json());
-//app.use((req, res, next) => {
-//    console.log(req.path, req.method)
-//   next()
-//})
 app.use(cors());
-
 
 
 //MONGO SETUP
@@ -29,62 +26,11 @@ mongoose.connect(
   }
 );
 
-// TODO ROUTES
-const Todo = require("./models/Todo");
+//IMPORT TODOS
+app.use(todoRoute);
 
-app.get('/', (req, res) => {
-  res.send('Welcome to Life List!')
-}); 
-
-app.get('/todos', async (req, res) => {
-  const todos = await Todo.find();
-
-  res.json(todos);
-});
-
-app.post('/todo/new', (req, res) => {
-	const todo = new Todo({
-		text: req.body.text
-	})
-
-	todo.save();
-
-	res.json(todo);
-});
-
-app.delete('/todo/delete/:id', async (req, res) => {
-	const result = await Todo.findByIdAndDelete(req.params.id);
-
-	res.json({result});
-});
-
-app.put('/todo/complete/:id', async (req, res)  => {
-  const todo = await Todo.findById(req.params.id);
-
-  todo.complete = !todo.complete
-
-  todo.save();
-
-  res.json(todo);
-});
-
-
-//AUTH ROUTES
-const User = require('./models/User')
-
- app.post('/register', (req, res) => {
-  const user = new User ({
-    email: req.body.email,
-    password: req.body.password,
-  });
-
-  user.save();
-  res.json(user);
-  
- });
-
-
-
+//IMPORT CREATE USER
+app.use(userRoutes);
 
 //PORT
 const PORT = process.env.PORT

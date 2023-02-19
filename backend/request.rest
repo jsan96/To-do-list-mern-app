@@ -1,7 +1,29 @@
-POST http://localhost:3000/login
+POST http://localhost:3000/todo/new
 Content-Type: application/json
 
 {
-    "email": "brandon@email.coms",
-    "password": "23453245"
+    "text": "Walk the dog"
+}
+
+###
+GET http://localhost:3000/todos
+
+###
+POST http://localhost:3000/todo/new
+Content-Type: application/json
+
+{
+    "text": "Walk the dog"
+}
+
+###
+DELETE http://localhost:3000/todo/delete/
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "email": "william@gmail.com",
+    "password": "will12345"
 }
