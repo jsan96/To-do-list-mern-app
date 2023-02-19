@@ -1,6 +1,3 @@
-const Navbar = () => {
-    return (<div>navbar</div>)
-}
 function NavBar() {
     return <nav className="nav">
         <a href="'/" className="page-title">Life List</a>
