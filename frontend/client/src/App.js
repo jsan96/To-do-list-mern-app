@@ -1,20 +1,17 @@
-import NavBar from "scenes/NavBar";
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import HomePage from 'scenes/HomePage';
+import NavBar from "./scenes/Navbar";
+import React from "react";
+import HomePage from "./scenes/Homepage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 
 function App() {
   return (
     <Router>
-      <div>
-        <NavBar />
-          <Route exact path="/">
-            <HomePage />
-          </Route>
-          <Route exact path="/HomePage">
-            <HomePage />
-          </Route>
-      </div>
+      <NavBar />
+      <Routes>
+        <Route exact path="/" element= {<HomePage />}/>
+        <Route exact path="/HomePage" element= {<HomePage />}/>
+      </Routes>
     </Router>
   );
 }
