@@ -1,4 +1,4 @@
-# Life List by Joaquin, Brandon, Jesus, Aj, and Ashley
+# Life List by Joaquin, Brandon, Jesus, AJ, and Ashley
 
 
 <!-- TABLE OF CONTENTS -->
