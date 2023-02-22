@@ -15,63 +15,80 @@ p {
 .header {
     height: 75px;
     width: 1000px;
-    background: #FFEFCB;
+    background: #656565;
     text-align: center;
     font-size: 30px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    color: white;
 }
 
 .content {
     float: left;
-    background: #FFEFCB;
+    background: #656565;
     width: 1000;
     text-align: center;
     font-size: 19.6px;
+    color: white;
 }
 
 .footer {
     height: 40px;
     width: 1000px;
-    background: #CFB284;
+    background: #656565;
     clear: both;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px;
+    color: white;
 }
 
 .footerTag {
     font-size: 20px;
     text-decoration: none;
+    color: white;
 }
 
 
 .button-37 {
-  background-color: #13aa52;
-  border: 1px solid #13aa52;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 400;
-  outline: none;
-  outline: 0;
-  padding: 10px 25px;
-  text-align: center;
-  transform: translateY(0);
-  transition: transform 150ms, box-shadow 150ms;
-  user-select: none;
-  touch-action: manipulation;
-  margin-bottom: 20px;
-}
+    background-color: #B3FFB3;
+    border: 1px solid #B3FFB3;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: black;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    touch-action: manipulation;
+    margin-bottom: 20px;
+  }
 
-.button-37:hover {
-  box-shadow: rgba(0, 0, 0, 0.637) 0 3px 9px 0;
-  transform: translateY(-2px);
-}
+  .button-37:hover {
+    box-shadow: rgba(0, 0, 0, 0.637) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
 
 .laptopGuy {
     width: 200px;
     
+}
+
+@media only screen and (max-width: 390px) {
+    div.wrapper, .header, .footer {
+        width: 300px;
+    }
+
+    div.header {
+        text-align: center;
+        font-size: 13px;
+    }
+
 }

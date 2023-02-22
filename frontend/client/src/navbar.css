@@ -1,0 +1,55 @@
+nav {
+  width: 300px;
+  background:transparent;
+  color: rgba(0, 0, 0, 0.87);
+  clip-path: circle(24px at 32px 24px);
+  transition: clip-path 0.375s;
+}
+
+nav:hover {
+  transition-timing-function: ease-out;
+  transition-duration: 0.75s;
+  clip-path: circle(390px at 150px 24px);
+}
+
+.navTag {
+  display: block;
+  line-height: 50px;
+  padding: 0 20px;
+  color: inherit;
+  cursor: pointer;
+  user-select: none;
+  font-size: 30px;
+  color: white;
+}
+
+.navTag:hover { background: #656565; }
+
+.navTag:active { background: #656565; }
+
+.navicon {
+  padding: 23px 20px;
+  cursor: pointer;
+  transform-origin: 32px 24px;
+}
+
+.navicon div {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+}
+
+.navicon div:before,
+.navicon div:after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.87);
+  position: absolute;
+}
+
+.navicon div:before { top: -7px; }
+
+.navicon div:after { top: 7px; }
