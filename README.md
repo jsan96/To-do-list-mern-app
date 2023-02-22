@@ -101,9 +101,9 @@ This is a list resources we found helpful and would like to give credit to.
 * [GitHub Pages](https://pages.github.com)
 * [Google Fonts](https://fonts.google.com/)
 * [React Icons](https://react-icons.github.io/react-icons/search)
-* [Tech2 etc] (https://www.youtube.com/@Tech2etc)
-* [EdRoh] (https://www.youtube.com/@EdRohDev)
-* [Arpan Neupane] (https://www.youtube.com/@ArpanNeupaneProductions)
+* [Tech2 etc](https://www.youtube.com/@Tech2etc)
+* [EdRoh](https://www.youtube.com/@EdRohDev)
+* [Arpan Neupane](https://www.youtube.com/@ArpanNeupaneProductions)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
