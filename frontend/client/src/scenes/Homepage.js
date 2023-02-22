@@ -1,28 +1,37 @@
 import React, {useEffect, useState} from 'react';
-import laptopGuy from '../assets/laptopguy.png';
 
 
 
 function HomePage() {
 
-  const [backendData, setBackendData] = useState([{}])
+  const [backendData, setBackendData] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:3000").then(
+/*    fetch("http://localhost:8000").then(
     response => response.json()
     ).then(
       data => {
         debugger
         setBackendData(data)
+        console.log(data)
       }  
-    )
-}, [])
+    ) */
 
+    const fetchData = async () => {
+
+      const response = await fetch(`http://localhost:8000`)
+   
+      const resData = await response.json()
+      setBackendData(resData.message)
+   
+     }
+     fetchData()
+}, [])
 
   return (
     <div className="wrapper">
     <div className="header">
-            <h1>Welcome to Life List</h1>
+            <h1>{backendData}</h1>
     </div>
     <div className="content">
     <h1>Trouble staying organized? We gotchu.</h1> 

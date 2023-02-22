@@ -4,8 +4,8 @@ function NavBar() {
         <div className="navicon">
           <div></div>
         </div>
-
-        <a className="navTag" href="/#">Todos</a>
+        <a className="navTag" href="/">Home</a>
+        <a className="navTag" href="/todos">Todos</a>
         <a className="navTag" href="/#">Sign Up</a>
       </nav>
   );
