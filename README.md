@@ -28,8 +28,9 @@
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 What our app features:
-* Multiple todo list creations that can be added and deleted as well as completed.
+* Multiple todo list creations that can be added, deleted, as well as completed.
 * Account creation for saved list history.
+* Log in with user password
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -100,8 +101,9 @@ This is a list resources we found helpful and would like to give credit to.
 * [GitHub Pages](https://pages.github.com)
 * [Google Fonts](https://fonts.google.com/)
 * [React Icons](https://react-icons.github.io/react-icons/search)
-* [Tech2 etc] ()
-* [EdRoh]
+* [Tech2 etc] (https://www.youtube.com/@Tech2etc)
+* [EdRoh] (https://www.youtube.com/@EdRohDev)
+* [Arpan Neupane] (https://www.youtube.com/@ArpanNeupaneProductions)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
