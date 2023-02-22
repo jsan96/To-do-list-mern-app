@@ -53,7 +53,7 @@ This is a library of major tools used to build our app.
 Below is an example of how you can install and set up our app.
 1. Clone the repo
    ```sh
-   git clone https://github.com/brand310/sneaklist
+   git clone https://github.com/jsan96/To-do-list-mern-app
    ```
 3. Install NPM packages
    ```sh
