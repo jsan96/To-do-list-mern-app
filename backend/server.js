@@ -1,8 +1,7 @@
-// DEPENDINCES
+// DEPENDENCIES
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
-const bcrypt = require('bcryptjs');
 const app = express();
 const todoRoute = require('./routes/todoRoutes')
 const userRoutes = require('./routes/userRoutes')
