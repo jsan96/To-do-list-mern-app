@@ -3,11 +3,12 @@ const User = require('../models/User')
 const bcrypt = require('bcryptjs');
 
  const createUser =  (req, res) => {
-  const {email,password} = req.body;
+  const {name,email,password} = req.body;
   const salt = bcrypt.genSaltSync(10);
   const hash = bcrypt.hashSync(req.body.password, salt);
   const userData = new User({
 
+    name:name,
     email:email,
     password:hash
 
@@ -17,6 +18,7 @@ if(newuser){
 
   res.json({
 
+  name:newuser.name,
   email:newuser.email,
   password:newuser.password,
  // token:generateToken(user._id)
