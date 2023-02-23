@@ -46,6 +46,7 @@ p {
     font-size: 20px;
     text-decoration: none;
     color: white;
+    padding-left: 1rem;
 }
 
 
@@ -70,6 +71,16 @@ p {
     touch-action: manipulation;
     margin-bottom: 20px;
   }
+
+  .button-37:hover {
+    box-shadow: rgba(0, 0, 0, 0.637) 0 3px 9px 0;
+    transform: translateY(-2px);
+  }
+
+.laptopGuy {
+    width: 200px;
+
+}
 
   .button-37:hover {
     box-shadow: rgba(0, 0, 0, 0.637) 0 3px 9px 0;
