@@ -76,6 +76,8 @@ Life List can be incredibly useful for managing tasks and staying organized, bot
 
 3. Team collaboration: If you're working on a team project, a to-do list app can help you assign tasks to team members, set deadlines, and track progress, ensuring that everyone is on the same page.
 
+This and more can be done with Life List!
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
