@@ -6,7 +6,7 @@ function NavBar() {
         </div>
         <a className="navTag" href="/">Home</a>
         <a className="navTag" href="/todos">Todos</a>
-        <a className="navTag" href="/#">Sign Up</a>
+        <a className="navTag" href="/register">Sign Up</a>
       </nav>
   );
 }
