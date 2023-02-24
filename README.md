@@ -44,7 +44,7 @@ This is a library of major tools used to build our app.
 * [React][React.js] [https://reactjs.org]
 * [NodeJS] [https://nodejs.org/en/]
 * [Bootstrap] [https://getbootstrap.com]
-* [ExpressJS] [https://expressjs.com/]
+* [Mongoose] [https://mongoosejs.com/docs/]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
