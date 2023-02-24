@@ -27,12 +27,12 @@ export default function Login({ setToken }) {
   };
 
   return (
-    <div className="reg-wrapper">
+    <div className="register-form">
       <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <p>Name</p>
-          <input type="text" onChange={(e) => setName(e.target.value)} />
+          <input className="auth-form-container" type="text" onChange={(e) => setName(e.target.value)} />
         </label>
         <label>
           <p>Email</p>

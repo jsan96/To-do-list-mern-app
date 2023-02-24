@@ -1,3 +1,18 @@
-.reg-wrapper {
-    margin-left: 860px;
-}
+
+
+.reg-wrapper{
+    text-align: center;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(79deg, #fcfced );
+  }
+  
+  .auth-form-container, .register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
