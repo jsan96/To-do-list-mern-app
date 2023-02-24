@@ -27,7 +27,7 @@ mongoose.connect(
 
 //HOME ROUTE
 app.get('/', (req, res) => {
-  res.status (200).json ({message: 'Welcome to LifeList!'})
+  res.status (200).json ({message: 'Welcome to Life List!'})
 }); 
 
 //IMPORT TODOS
