@@ -27,8 +27,8 @@ export default function Login({ setToken }) {
   };
 
   return (
-    <div className="login-wrapper">
-      <h1>Please Log In</h1>
+    <div className="reg-wrapper">
+      <h1>Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label>
           <p>Name</p>
@@ -40,16 +40,15 @@ export default function Login({ setToken }) {
         </label>
         <label>
           <p>Password</p>
-          <input
+          <input className = "checkbox"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </label>
         <div>
-        <a href="/todos" class="button">Sign In</a>
+        <a href="/todos" className = "button">Sign In</a>
         </div>
       </form>
     </div>
   );
 }
-

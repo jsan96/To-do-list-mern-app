@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './register.css'
 import './navbar.css';
 import  './home.css';
 import './todo.css';
